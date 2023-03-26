@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.title {
+
+  font-size: 1.2em;
+}
+
+.green {
+  color: var(--green);
+}
+
+.white {
+  color: var(--white);
+  font-size: .8em;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all ease 150ms
+}
+
+
+
+a {
+  text-decoration: none;
+}
+
+a.active {
+  color: var(--anchor-active-color);
+  font-weight: var(--anchor-active-font-weight);
+}
+
+a:hover {
+  color: var(--hover-color);
+}
+
+header {
+  align-items: center;
+  display: flex;
+  background-color: var(--header-background);
+  justify-content: space-between;
+  padding: 1em 0;
+
+}
+
+.section {
+  flex-grow: 1;
+}
+
+.section.logo {
+  margin-left: 2.5em;
+}
+
+.logo {
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 2px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row nowrap;
+  width: 500px;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  flex-grow: 1;
+  text-align: center;
+  width: 70px;
+}
+
+ul li a {
+  color: var(--anchor-color);
+  font-size: .9rem;
+  text-transform: uppercase;
+}
+
+header div:nth-child(1) {
+  flex-grow: 8;
+}
+
+
+
+.box-shadow {
+  -webkit-box-shadow: 0px 0px 22px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 22px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 22px -7px rgba(0, 0, 0, 0.175);
+  position: fixed;
+  width: 100vw;
+   z-index: 2;
+}
+
+@media all and (max-width: 800px) {
+  header {
+    justify-content: space-around;
+  }
+
+  .container {
+    padding: 50px;
+  }
+}
+
+@media only screen and (max-width:542px) {
+  header div:nth-child(1) {
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 0;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  .section {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .section.logo {
+    margin: 0;
+  }
+
+  ul {
+    background-color: #232323;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  ul li {
+    width: 50%;
+    padding: 5px;
+  }
+}
+
+.break {
+  height: 35px;
+  width: 35px;
+  margin: 0;
+}
+
+.gu_lal {
+  color: rgb(214, 0, 0);
+  transform: scale(1.5);
+}
+
+.iconImg {
+  width: 30px;
+  height: 30px;
+}
+
+.heading45 {
+  position: relative;
+  top: 100px;
+  margin: 30px;
+}
+
+.div723 {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 25px;
+
+}
+
+.pati {
+  width: 300px;
+  border: 1px solid rgb(66, 66, 66);
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 10px;
+}
+
+.heding425 {
+  text-align: center;
+}
+
+.div6982 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  top: 100px;
+  gap: 10px;
+}
+
+.span563 {
+  font-size: 11px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* display classes */
+.flex {
+  display: flex;
+}
+
+.flex_baselineStart_center {
+  display: flex;
+  justify-content: first baseline;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flex_baselineEnd_center {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.flex_center_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex_spaceBtw_center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex_column {
+  flex-direction: column;
+}
+
+.absoluteCenter {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+.gap5 {
+  gap: 5px;
+}
+
+.gap10 {
+  gap: 10px;
+}
+
+.gap20 {
+  gap: 20px;
+}
+
+.gap30 {
+  gap: 30px;
+}
+
+.gap40 {
+  gap: 40px;
+}
+
+.margin30 {
+  margin: 30px;
+}
+
+.margin_10_20 {
+  margin: 10px 20px;
+}
+
+.padding_10_20 {
+  padding: 10px 20px;
+}
+
+.overflow_X {
+  overflow-x: scroll;
+}
+
+.top20 {
+  margin-top: 20px;
+}
+
+.top30 {
+  margin-top: 30px;
+}
+
+.top40 {
+  margin-top: 40px;
+}
+
+.top50 {
+  margin-top: 50px;
+}
+
+.width100 {
+  width: 100px;
+}
+
+.padding10 {
+  padding: 10;
+}
+
+
+
+
+
+
+/* font class */
+.bold {
+  font-weight: bold;
+}
+
+.fontLink {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.font_13 {
+  font-size: 13px;
+}
+
+.hoverTo_red:hover {
+  color: red;
+}
+
+.faintbackground8 {
+  background-color: rgba(255, 255, 255, 0.802);
+}
